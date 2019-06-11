@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<form action="http://localhost:5000/result" method="POST">
+    <div class="row">
+        <div class="column">
+            <fieldset>
+            <legend>Actor:</legend>
+                <select name="actor" size="4">
+                    <option value="1" selected>Actor 1</option>
+                    <option value="2" >Actor 2</option>
+                    <option value="3" >Actor 3</option>
+                    <option value="4" >Actor 4</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Element:</legend>
+                <label>ID: </label><input type="text" name="id" value="{{ result[-1][-1] }}"/><br>
+                <label>Name: </label><input type="text" name="name"/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Element Type:</legend>
+                <input type="radio" name="type" value="Goal" checked/> Goal <br>
+                <input type="radio" name="type" value="Task"/> Task
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Decomposition Type:</legend>
+                <input type="radio" name="decomp" value="And" checked/> AND <br>
+                <input type="radio" name="decomp" value="Or"/> OR <br>
+                <input type="radio" name="decomp" value="Xor"/> XOR
+            </fieldset>
+            <br>
+        </div>
+        <div class="column">
+            <fieldset>
+                <legend>Parent:</legend>
+
+                <table border=1>
+                   {% for key in result %}
+                        <tr>
+                            <tb> {{ key[1] }} </tb>
+                            <tb> {{ key[2] }} </tb><br>
+                        </tr>
+                    {% endfor %}
+                </table>
+            <br>
+            <label>Parent ID: </label><input name="pid" type="text"/>
+            </fieldset>
+            <p><input type="submit" value="submit"/></p>
+        </div>
+    </div>
+</form>
+</body>
+</html>
