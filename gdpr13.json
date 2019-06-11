@@ -1,0 +1,272 @@
+[{
+ "actor": "1",
+ "id": "1",
+ "name": "Art. 13 GDPR",
+ "type": "Goal",
+ "decomp": "Or",
+ "parent": ""
+},
+{
+ "actor": "1",
+ "id": "2",
+ "name": "data subject already has the information",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "1"
+},
+{
+ "actor": "1",
+ "id": "3",
+ "name": "personal data are NOT collected from the data subject ",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "1"
+},
+{
+ "actor": "1",
+ "id": "4",
+ "name": "provide the data subject with following information",
+ "type": "Goal",
+ "decomp": "And",
+ "parent": "1"
+},
+{
+ "actor": "1",
+ "id": "5",
+ "name": "Do so at the time when personal data are obtained",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "6",
+ "name": "the identity and the contact details of the controller and, where applicable, of the controller\u2019s representative",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "7",
+ "name": "the contact details of the data protection officer, where applicable",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "8",
+ "name": "the purposes of the processing for which the personal data are intended as well as the legal basis for the processing;",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "9",
+ "name": "the legitimate interests",
+ "type": "Goal",
+ "decomp": "Or",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "10",
+ "name": "Article 6-1-f is NOT the case",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "9"
+},
+{
+ "actor": "1",
+ "id": "11",
+ "name": "the legitimate interests pursued by the controller or by a third party;",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "9"
+},
+{
+ "actor": "1",
+ "id": "12",
+ "name": "the recipients or categories of recipients of the personal data, if any;",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "13",
+ "name": "about transferring personal data",
+ "type": "Goal",
+ "decomp": "Xor",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "14",
+ "name": "Not applicable (no transfer)",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "13"
+},
+{
+ "actor": "1",
+ "id": "15",
+ "name": "It is applicable ",
+ "type": "Goal",
+ "decomp": "And",
+ "parent": "13"
+},
+{
+ "actor": "1",
+ "id": "16",
+ "name": "to a third country or international organization ",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "15"
+},
+{
+ "actor": "1",
+ "id": "17",
+ "name": "the existence or absence of an adequacy decision by the Commission",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "15"
+},
+{
+ "actor": "1",
+ "id": "18",
+ "name": "case of Article 46\u00a0or\u00a047, or the second subparagraph of\u00a0Article 49(1)",
+ "type": "Goal",
+ "decomp": "Xor",
+ "parent": "15"
+},
+{
+ "actor": "1",
+ "id": "19",
+ "name": "NOT the case",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "18"
+},
+{
+ "actor": "1",
+ "id": "20",
+ "name": "reference to the appropriate or suitable safeguards and the means by which to obtain a copy of them or where they have been made available.",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "18"
+},
+{
+ "actor": "1",
+ "id": "21",
+ "name": "further information to ensure fair and transparent processing",
+ "type": "Goal",
+ "decomp": "And",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "22",
+ "name": "the period for which the personal data will be stored, or if that is not possible, the criteria used to determine that period",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "21"
+},
+{
+ "actor": "1",
+ "id": "23",
+ "name": "the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "21"
+},
+{
+ "actor": "1",
+ "id": "24",
+ "name": "point (a) of\u00a0Article 6(1) or point (a) of\u00a0Article 9(2)",
+ "type": "Goal",
+ "decomp": "Xor",
+ "parent": "21"
+},
+{
+ "actor": "1",
+ "id": "25",
+ "name": "NOT the case",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "24"
+},
+{
+ "actor": "1",
+ "id": "26",
+ "name": "the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "24"
+},
+{
+ "actor": "1",
+ "id": "27",
+ "name": "the right to lodge a complaint with a supervisory authority;",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "21"
+},
+{
+ "actor": "1",
+ "id": "28",
+ "name": "whether the provision of personal data is a statutory or contractual requirement, or a requirement necessary to enter into a contract, as well as whether the data subject is obliged to provide the personal data and of the possible consequences of failure to provide such data",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "21"
+},
+{
+ "actor": "1",
+ "id": "29",
+ "name": "automated decision-making, including profiling, referred to in\u00a0Article 22(1) and (4) and",
+ "type": "Goal",
+ "decomp": "Xor",
+ "parent": "21"
+},
+{
+ "actor": "1",
+ "id": "30",
+ "name": "NOT the case",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "29"
+},
+{
+ "actor": "1",
+ "id": "31",
+ "name": "the existence of automated decision-making, including profiling, and meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject. ",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "29"
+},
+{
+ "actor": "1",
+ "id": "32",
+ "name": "process for a purpose other than that for which the personal data were collected",
+ "type": "Goal",
+ "decomp": "Xor",
+ "parent": "4"
+},
+{
+ "actor": "1",
+ "id": "33",
+ "name": "NOT the case",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "32"
+},
+{
+ "actor": "1",
+ "id": "34",
+ "name": "provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2 (to ensure fair and transparent processing)",
+ "type": "Task",
+ "decomp": "And",
+ "parent": "32"
+}]
